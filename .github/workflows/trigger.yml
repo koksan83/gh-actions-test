@@ -1,8 +1,9 @@
 name: Trigger test
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - "release/**"
 jobs:
   test-trigger:
     name: Test trigger
