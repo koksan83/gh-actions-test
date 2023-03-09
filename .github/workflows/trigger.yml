@@ -1,0 +1,12 @@
+name: Trigger test
+
+on:
+  release:
+    types: [published]
+jobs:
+  test-trigger:
+    name: Test trigger
+    runs-on: ubuntu-latest
+    steps:
+      - Step 1
+      run: echo "$GITHUB_REF_NAME"
