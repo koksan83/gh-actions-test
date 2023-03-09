@@ -9,5 +9,5 @@ jobs:
     name: Test trigger
     runs-on: ubuntu-latest
     steps:
-      - Step 1
-      run: echo "$GITHUB_REF_NAME"
+      - name: Step 1
+        run: echo "$GITHUB_REF_NAME"
